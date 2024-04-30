@@ -20,3 +20,7 @@ screenshots:
 ![image](https://github.com/carekovisk/TenhouUI-plus/assets/87438495/fb13c7f5-22af-45ce-b4cc-3d276c80b716)
 ![image](https://github.com/carekovisk/TenhouUI-plus/assets/87438495/8bb37f8f-66e2-44f2-9266-11277ae4c768)
 ![image](https://github.com/carekovisk/TenhouUI-plus/assets/87438495/4d8c926f-a6d1-431d-a693-ca6bfcc2bea9)
+
+
+bg used:
+https://github.com/zbybr/tenhou
