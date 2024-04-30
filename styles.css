@@ -1,0 +1,803 @@
+.click-dot
+{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .75) !important;
+    animation: pulse .25s infinite alternate;
+    margin-left: -10px !important;
+    margin-top: -10px !important;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(.25);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes glow
+{
+    0%
+    {
+        color: white;
+        box-shadow: 0px 0px 0px 0px #fff0;
+    }
+    50%
+    {
+        color: white;
+        box-shadow: 0px 0px 4px 2px #ddffd03b;
+    }
+    100%
+    {
+        color: white;
+        box-shadow: 0px 0px 0px 0px #fff0;
+    }
+}
+
+@keyframes glow2
+{
+    0%
+    {
+        color: white;
+        box-shadow: 0px 0px 0px 0px #fff0;
+
+    }
+    50%
+    {
+        
+        color: white;
+        box-shadow: 0px 0px 5px 5px #ddffd03b;
+    }
+    100%
+    {
+        color: white;
+        box-shadow: 0px 0px 0px 0px #fff0;
+    }
+}
+
+@keyframes glow3
+{
+    0%
+    {
+        outline: 0px solid #ddffd000;
+    }
+    50%
+    {
+        
+        /*
+        outline: 8px solid #ffffff0d;
+        outline-offset: -5px;
+        */
+        box-shadow: 0px 0px 10px 3px #ddffd03b;
+        
+    }
+    100%
+    {        
+        outline: 0px solid #ddffd000;
+    }
+}
+
+body
+{
+    font-style: italic;
+    font-size: 45%;
+}
+
+body::after
+{
+    font-size: 12px;
+    color: #ffffff2b;
+    font-style: normal;
+    font-family: system-ui;
+    font-weight: bold;
+    content: "Tenhou UI+";
+}
+/* widescreen / center */
+.maindiv
+{
+    margin-top: 16px !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.vars{
+    --new-bg: "none";
+    --old-bg: "none";
+ }
+
+.old-background {
+    background: radial-gradient(transparent, black), var(--old-bg) !important; 
+    background-size: 100% auto !important;    
+}
+.new-background {
+
+    background: radial-gradient(transparent, #000000d4), var(--new-bg) !important; 
+    background-size: 100% auto !important;    
+}
+
+body
+{
+    border-style: solid;
+    border-color: rgba(230, 255, 3, .81);
+    border-width: 0px;
+    background-size: 100% auto !important;
+}
+
+/*Login*/
+.maindiv,
+body > div:nth-child(7) > div.nosel.tbl > div.tbc.c19.c16
+{
+    background: none !important;
+}
+.tbc.c19.c16
+{
+    border-style: solid;
+    border-color: rgba(237, 50, 250, .81);
+    border-width: 0px;
+
+    background: none !important;
+
+    top: 0px !important;
+    left: 0px !important;
+}
+
+/*black dialog*/
+.maindiv > div.tbc.c20.c15 > div,
+.maindiv > div.tbc.c18.c15 > div
+{
+    background-color: #00000075 !important;
+}
+
+
+/*standard buttons*/
+button,.btndiv.nosel > div > div
+{
+    background-image: none;
+    background-color: #000000d5 !important;
+    border-radius: 8px !important;
+    border-color: #ffffff26 !important;
+    border-style: outset;
+}
+
+/*start and end screen, + total window*/
+.maindiv > div.tbc.c24.c15 > div,
+.maindiv > div.tbc.c24.c15 > div > table,
+.maindiv > div.tbc.c26.c15 > div,
+.maindiv > div.tbc.c23.c15 > div,
+.maindiv > div.tbc.c25.c15 > div
+{   
+    border-radius: 22px;
+    margin:0px !important;
+    padding: 2% !important;
+    
+}
+
+.maindiv > div.tbc.c26.c15 > div > div,
+.maindiv > div.tbc.c23.c15 > div > div,
+.maindiv > div.tbc.c25.c15 > div > div
+{
+    font-family: fantasy !important;
+    font-size: 250% !important; 
+    align-content: center;
+    
+    padding: 1% !important;
+    margin-bottom: 1% !important;
+    
+    border-style: solid;
+    border-color: #f00;
+    border-width: 0px;
+    border-radius: 22px;
+    text-shadow: 5px 5px 1px #620000,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+}
+
+.maindiv > div.tbc.c25.c15 > div > table > tbody > tr > td > div,
+.maindiv > div.tbc.c23.c15 > div > table > tbody > tr > td > div
+{
+    border-width: 0px !important;
+    background: none !important;
+    font-size: 150% !important; 
+    
+    text-shadow: 5px 5px 1px #100062,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;   
+    
+    margin-bottom: 10% !important;
+    
+}
+.maindiv > div.tbc.c26.c15 > div > table > tbody > tr > td 
+{
+    border-width: 0px !important;
+    background: none !important;
+    font-size: 150% !important; 
+    font-family: fantasy !important;
+    font-weight: lighter !important;
+    font-style: normal !important;
+
+    text-shadow: 5px 5px 1px #620000,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+        
+}
+.maindiv > div.tbc.c26.c15 > div > table > tbody > tr > td > table
+{
+    text-shadow: none;
+    font-family:  sans-serif!important;
+    font-weight: lighter !important;
+    
+    text-align: left !important;
+    font-size: 70% !important;
+    
+}
+
+/*Score Title*/
+.maindiv > div.tbc.c24.c15 > div > div
+{
+    font-family: fantasy !important;
+    font-size: 250% !important; 
+    align-content: center;
+    
+    padding: 1% !important;
+    
+    border-style: solid;
+    border-color: #f00;
+    border-width: 0px;
+    border-radius: 22px;
+    text-shadow: 5px 5px 1px #620000,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+
+}
+
+/*yaku text*/
+.maindiv > div.tbc.c24.c15 > div > table:nth-child(2) > tbody > tr > td > table > tbody > tr > td
+{        
+    font-style: italic;
+    font-weight: bolder;
+    font-family: inherit !important;
+    font-size: 150% !important;
+    padding: 0px !important;
+    padding-top: 10px !important;
+    text-shadow: 3px 3px 1px #08006b,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+   
+}
+
+
+/*dora + score*/
+.maindiv > div.tbc.c24.c15 > div > table:nth-child(3) > tbody > tr > td > div
+{
+    font-size: 120%;
+    border-radius: 1px;
+    border-style: inset;
+    border-color: #0000;
+    border-width: 0px;
+    background: none !important;
+    
+    text-shadow: 3px 3px 1px #680073,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+}
+.maindiv > div.tbc.c24.c15 > div > table:nth-child(3)
+{
+    border-radius: 12px;
+    border-style: inset;
+    border-color: #ffffff26;
+    border-width: 0px;
+    background-color: #00000021 !important;
+    
+    font-size: 125% !important;
+    padding-bottom: 40px !important;
+}
+
+/*Menu Title*/
+.maindiv > div.tbc.c20.c15 > div > table > tbody > tr > td > div
+{
+    position: fixed !important;
+    padding: 2vh !important;
+    left:0px;
+    top: 3vh !important;
+    background-color: #000000a6 !important;
+    font-size: 320% !important;
+    font-family: fantasy !important;
+    text-align: center;
+}
+.maindiv > div.tbc.c20.c15
+{
+    top: 3vh !important
+}
+/*stats bg*/
+#rnktab,
+#pftab
+{
+    font-size: 115% !important;
+    padding: 20px !important;
+}
+
+.maindiv > div.tbc.c20.c15 > div
+{
+    background-color: #000000a3 !important; 
+}
+
+#pftab > tbody > tr:nth-child(2) > td,
+#rnktab > tbody > tr:nth-child(2) > td
+{
+    text-align: left !important;
+    padding-top: 24px !important;
+}
+/*Close btn opt*/
+.maindiv > div.tbc.c22.c15 > div > button:nth-child(7)
+{
+    font-size: 2.1vw
+}
+
+/*resize list*/
+.maindiv > div.tbc > div
+{
+    margin-top: 0vh;
+    max-height: 80vh;
+
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.maindiv > div.tbc.c20.c15 > div > div,
+.maindiv > div.tbc.c20.c15  > div > div > .nohdr
+{
+    align-content: center !important;    
+    height: max-content !important;
+    
+    height: 65vh !important;
+    
+}
+
+/*Online + Account status*/
+.maindiv > div.tbc.c20.c15 > div > div:nth-child(1) > div:nth-child(1)
+{    
+    
+    display: flex !important;
+    position: absolute !important;
+    width: 100% !important;        
+    
+    left:0px!important;
+    top: 0px!important;
+    
+    z-index: 1;
+    margin-left: -5px !important;
+    font-size: 3vh !important;   
+}
+/*mouse over join button*/
+.maindiv > div.tbc.c20.c15  > div > div:nth-child(1) > div:nth-child(1) > div
+{
+    
+    margin: 1vh !important;
+    margin-top:13vh !important;
+    position: relative !important;
+    text-align: center !important;
+    vertical-align: bottom !important;
+}
+
+.maindiv > div.tbc.c20.c15  > div > div:nth-child(1) > div:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td
+{
+    text-align: right;
+    font-size: 1.75vh !important;
+    padding-top: 15px !important;
+    padding-left: 10px !important;
+}
+
+/*alternate color*/
+.gray:before
+{content: " " !important;}
+
+.gray{color: #b9c8dd !important; font-weight: lighter!important; font-style:  italic!important; font-size:95% !important;}
+
+.gray:after
+{content: " " !important;}
+
+/*All buttons/*/
+.bt3:hover, 
+button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
+
+/*navigation menu buttons*/
+.ra1 {text-align: center !important; color:#f000 !important; font-size: 0px !important; height: 8vh !important;}
+.ra2 {text-align: center !important; color:#f000 !important; font-size: 0px !important; height: 8vh !important;}
+
+.ra1:before{content: "«" !important; color:#fff !important; font-size: 5vh !important;}
+.ra2:after{content: "»" !important; color:#fff !important; font-size: 5vh !important;}
+
+.tbl > .tbc,
+#pane0 > button,
+#pane1 > button,
+#pane2 > button
+{
+    border-radius: 12px !important;
+}
+.tbl > .tbc.bblink
+{
+    animation: glow 0.75s ease-in-out infinite !important;
+}
+.btndiv > div
+{
+    z-index: 2;
+    cursor: pointer !important;
+    border-radius: 12px !important;
+
+    opacity: .9;
+    padding: 2px;
+
+    height: 12vh !important;
+}
+.btndiv > div:hover
+{
+    opacity: 1;
+    border-color: white !important;
+    border-width: 3px !important;
+    border-style: solid!important;
+}
+
+/*Furiten*/
+.maindiv > div:nth-child(14)
+{
+    padding: 5px !important;
+    border-radius: 4px !important;
+    border-color: red !important;
+    border-width: 3px !important;
+    margin-top: -32px !important;
+    background-color: red !important;
+    font-size: 100% !important;
+}
+
+/*Button visual effects*/
+.tbc.bblink.ts0,
+.tbc.cblink.ts0,
+.btndiv > div:nth-child(8)
+{
+    font-style: normal !important;
+    font-weight: lighter !important;
+    font-size: 50px !important;
+    background-color: #070604ad !important;
+}
+.tbc.ts0/*shadow font effect*/
+{
+    text-shadow: -5px 1px 1px #000,
+    1px 5px 1px #00000040,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+}
+/*Exceptions*/
+.tbc.cblink.ts0
+{
+    animation: none !important;
+    box-shadow: none !important;
+    font-family: inherit !important;
+}
+/*Clear bg*/
+.tbc.bblink.ts0[id^="m2359816"],
+.tbc.bblink.ts0[id^="m2359815"],
+.tbc.bblink.ts0[id^="m2098693"],
+.tbc.bblink.ts0[id^="m2359814"],
+.tbc.bblink.ts0[id^="m2360328"],
+.tbc.bblink.ts0[id^="m3670533"],
+.tbc.bblink.ts0[id^="m3671045"]
+{
+    background: none !important;
+}
+
+/*Call*/
+.tbc.bblink.ts0[id^="m3670533"],
+.tbc.bblink.ts0[id^="m3671045"]
+{
+    font-size: 0pt !important;
+}
+.tbc.bblink.ts0[id^="m3670533"]:before,
+.tbc.bblink.ts0[id^="m3671045"]:before
+{
+    font-size: 50px !important;
+    content: "" !important;
+}
+.tbc.bblink.ts0[id^="m3670533"]:after,
+.tbc.bblink.ts0[id^="m3671045"]:after
+{
+    font-family: fantasy !important;
+    font-size: 50px !important;
+    content: "Call" !important;
+    margin-left: 10px;
+}
+.btndiv > div:nth-child(3),
+.btndiv > div:nth-child(4)
+{
+    background-color: #00307e !important;    
+}
+
+/*Ron*/
+/*riichi*/
+/*Redal*/
+/*Tsumo*/
+.btndiv > div:nth-child(10),
+.btndiv > div:nth-child(11),
+.btndiv > div:nth-child(9),
+.btndiv > div:nth-child(16)
+{
+    font-family: fantasy !important;
+    font-weight: bolder !important;
+
+    position: absolute !important;
+    top: 60vh !important;
+    left: 60px !important;
+    width: 300px !important;
+    height: 16vh !important;
+
+    animation: glow2 0.75s ease-in-out infinite !important;
+}
+
+
+/*Ron*/
+.btndiv > div:nth-child(10)
+{
+    background-color: #a00000 !important;
+}
+
+/*Riichi*/
+.btndiv > div:nth-child(11)
+{
+    background-color: #e06b00 !important;
+}
+
+/*Chii / Pon*/
+.btndiv > div:nth-child(2)
+{
+    font-family: fantasy !important;
+    background-color: #00307e !important;    
+
+}
+
+/*Tsumo*/
+.btndiv > div:nth-child(9)
+{
+    background-color: #4800a3 !important; 
+}
+
+/*Redeal*/
+.btndiv > div:nth-child(16)
+{
+    background-color: #969696 !important;
+}
+
+/*Multiple Chii panel (Call)*/
+.tbc.bgb > canvas
+{
+    clear: both!important;
+    left: 0px !important;
+    top: 74vh !important;
+
+    scale: .75 !important;
+    opacity: 1 !important;
+}
+
+/*Win buttons - DropAll, AutoWin etc*/
+.btndiv > div:nth-child(37),
+.btndiv > div:nth-child(36),
+.btndiv > div:nth-child(35),
+.btndiv > div:nth-child(34),
+.btndiv > div:nth-child(33)
+{
+    /*comment for default pos*/
+    position: fixed !important;
+    left: 0px !important;
+    width: 0px !important;
+    /*comment for default pos*/
+    
+    height: 50px !important;
+    border-color: #f000 !important;
+
+    font-size: 18px !important;
+    font-style: normal !important;    
+
+    text-shadow: none !important;
+
+}
+
+#m1183750,
+#m1183752,
+#m1183749,
+#m1183753
+{
+    opacity: 1;
+    border-width: 0px !important;
+    border-radius: 12px !important;
+    border-color: #f000 !important;
+    background-color: #0000 !important;
+
+    text-shadow: -2px 2px 2px #000000ab,
+    2px 2px 2px #000000ab,
+    2px -2px 0 #000000ab,
+    -2px -2px 0 #000000ab !important;
+
+}
+
+.btndiv > div:nth-child(35)
+{
+    top: 0vh !important
+}
+.btndiv > div:nth-child(34)
+{
+    top: 45vh !important
+}
+.btndiv > div:nth-child(36)
+{
+    top: 50vh !important
+}
+.btndiv > div:nth-child(33)
+{
+    top: 55vh !important
+}
+.btndiv > div:nth-child(37)
+{
+    top: 60vh !important
+}
+
+/*Exit*/
+.btndiv > div:nth-child(32)
+{
+    height: max-content !important;    
+    border-width: 0px !important;
+    border-color: #fff !important;
+    text-shadow: none !important;
+}
+
+#m495623
+{
+
+    background-color: #640000 !important;
+    text-shadow: none !important;
+    text-align:  center!important;
+    vertical-align:  middle!important;
+    padding: 5% !important;
+    border-color: #f000 !important;
+
+    text-shadow: -2px 2px 2px #000000ab,
+    2px 2px 2px #000000ab,
+    2px -2px 0 #000000ab,
+    -2px -2px 0 #000000ab !important;
+}
+
+/*Text after Call*/
+.auxdiv > span
+{
+    padding: 2vw !important;
+    padding-left: 100vw !important;
+    padding-right: 100vw !important;
+    
+    border-color: #fff3 !important;
+    border-width: 0px !important;
+    background-color: #00000063 !important;
+    
+    
+    font-family: fantasy !important;
+    font-size: 600% !important;
+    font-weight: normal!important;
+    font-style: italic!important;
+
+    color: #fff !important;
+
+    text-shadow: 8px 4px 1px #36003ea8,
+    1px 5px 1px #000,
+    1px -2px 0 #000,
+    -1px -1px 0 #000 !important;
+
+}
+.auxdiv > span:after
+{
+    content: " !";
+}
+
+.auxdiv > span:after
+{
+    padding: 2px !important;
+}
+
+
+/*replay arrows*/
+.btndiv > div:nth-child(30),
+.btndiv > div:nth-child(29),
+.btndiv > div:nth-child(5)
+{
+    position: fixed !important;
+    top:0 !important;
+    
+    font-size: 48px !important;
+    scale:.5;
+    font-style: normal !important;
+    background-color: #000000 !important;
+    border-radius: 15px !important;
+    opacity: .95;
+}
+.btndiv > div:nth-child(5) > div
+{
+    background-color: #0a4700 !important;
+}
+
+
+.btndiv > div:nth-child(30){top: 0vh!important;}
+.btndiv > div:nth-child(29){top: 7vh !important;}
+.btndiv > div:nth-child(5){top: 14vh !important;}
+
+
+/*mat*/
+.maindiv > canvas:nth-child(1)
+{
+    background: none !important;
+    clip-path: polygon(10% 10%, 90% 10%, 90% 80%, 10% 80%);
+    background-color: #0000 !important;
+    /*TODO create flag*/
+
+    filter: brightness(1.875) contrast(.85) blur(0.5px);
+    opacity: .4;
+}
+
+/*turn marker*/
+.maindiv > canvas:nth-child(7)
+{
+    
+    border-radius: 10px !important;
+    background: rgba(0, 0, 0, 0) !important;
+
+    border-style:  inset!important;;
+    border-color: rgba(26, 255, 0, .31) !important;;
+    border-width: 0px !important;
+    animation: glow3 0.75s ease-in-out infinite !important;
+
+    background-color: #0000 !important;
+
+}
+
+/*Time counter*/
+.nosel.tbl.ts0
+{
+    font-weight: normal !important;
+    font-family: fantasy !important;
+    font-style: normal !important;
+    font-size: 120% !important;
+    text-shadow: -2px 2px 2px #000000ab,
+    2px 2px 2px #000000ab,
+    2px -2px 0 #000000ab,
+    -2px -2px 0 #000000ab !important;
+}
+
+#azpspane
+{
+    font-size: 75% !important;
+    height: 100vh !important;
+    top: 0 !important;
+    background: #00000073;   
+    z-index: 1 !important;
+}
+#azpspane > canvas,
+#azpspane > div
+{
+    margin-top: 20px !important;
+}
+#azpspane > div.hands > div > h2
+{
+    background-color: #92009373 !important;
+}
+#azpspane > div.hands > div
+{
+     background-color: #00000078 !important;
+}
