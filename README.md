@@ -2,7 +2,7 @@ Extension Repository.
 
 Using custom JS and CSS styles to improve the overall experience of playing on tenhou.net/3/ and ron2.jp/3/
 - widescreen support
-- all object resized
+- objects resized
 - new animations
 - new button placements and styles
 - click feedback
