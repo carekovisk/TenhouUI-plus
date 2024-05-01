@@ -117,11 +117,14 @@ body::after
     background: radial-gradient(transparent, black), var(--old-bg) !important; 
     background-size: 100% auto !important;    
 }
+
 .new-background {
 
-    background: radial-gradient(transparent, #000000d4), var(--new-bg) !important; 
-    background-size: 100% auto !important;    
+    background: radial-gradient(rgba(255, 0, 0, 0), #000000b0), var(--new-bg) !important; 
+    background-repeat: no-repeat !important;
+    background-size: cover !important;    
 }
+
 
 body
 {

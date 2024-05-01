@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Tenhou UI+ /3/",
   "version": "1.0",
   "permissions": [
@@ -15,9 +15,23 @@
 		"64": "images/icons/64.png",
 		"128": "images/icons/128.png"
 	},
-	"web_accessible_resources": [
-		"sounds/click.mp3"
-	],
+  "action": {
+    "default_icon": {
+      "16": "images/icons/16.png",
+      "19": "images/icons/19.png",
+      "38": "images/icons/38.png",
+      "64": "images/icons/64.png",
+      "128": "images/icons/128.png"
+      },
+    "default_popup": "options.html",
+    "default_title": "__MSG_popupTitle__"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "sounds/click.mp3" ],
+      "matches": [ ]
+    }
+  ],  
   "content_scripts": [
     {
       "matches": ["https://tenhou.net/3/*", "https://ron2.jp/3/*"],
