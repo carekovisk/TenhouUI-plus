@@ -123,6 +123,7 @@ body::after
     background: radial-gradient(rgba(255, 0, 0, 0), #000000b0), var(--new-bg) !important; 
     background-repeat: no-repeat !important;
     background-size: cover !important;    
+    background-position: center !important;
 }
 
 
