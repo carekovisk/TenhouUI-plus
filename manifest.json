@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Tenhou UI+ /3/",
+  "name": "Tenhou UI+ for /3/",
   "version": "1.0",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
@@ -24,7 +25,7 @@
       "128": "images/icons/128.png"
       },
     "default_popup": "options.html",
-    "default_title": "__MSG_popupTitle__"
+    "default_title": "Tenhou UI+"
   },
   "web_accessible_resources": [
     {

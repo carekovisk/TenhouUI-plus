@@ -1,25 +1,36 @@
-document.addEventListener("click", function(event) {
+chrome.storage.sync.get('clickvfx', function(data) {
+  var clickvfxVar = true;
+  clickvfxVar = data.clickvfx;
+  console.log('clickvfxVar ', clickvfxVar);
+  if (clickvfxVar == true)
+  {
+
+    var a = new Audio('https://github.com/carekovisk/TenhouUI-plus/raw/main/sounds/click.mp3');
     
-    let url = chrome.runtime.getURL('sounds/click.mp3')
-    let a = new Audio(url)
-    a.play()
+    document.addEventListener("click", function(event) {
 
-    // create dot
-    var dot = document.createElement('div');
-    dot.className = 'click-dot';
-    dot.style.top = event.clientY + 'px';
-    dot.style.left = event.clientX + 'px';
-    document.body.appendChild(dot);
-
-    // Remove after .25 sec
-    setTimeout(function() {
+      a.play()    
+    
+      // create dot
+      var dot = document.createElement('label');
+      dot.className = 'click-dot';
+      dot.style.top = event.clientY + 'px';
+      dot.style.left = event.clientX + 'px';
+    
+      document.body.appendChild(dot);
+    
+        // Remove after .25 sec
+      setTimeout(function() {
         dot.parentNode.removeChild(dot);
-    }, 250);
+      }, 250);
+    
+    
+    });
 
+  };
 });
 
 
-// Place in header (do not use async or defer)
 document.addEventListener('readystatechange', event => {
 
     switch (document.readyState) {
