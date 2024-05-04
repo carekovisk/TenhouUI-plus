@@ -1,8 +1,17 @@
-chrome.storage.sync.get('clickvfx', function(data) {
-  var clickvfxVar = true;
-  clickvfxVar = data.clickvfx;
-  console.log('clickvfxVar ', clickvfxVar);
-  if (clickvfxVar == true)
+chrome.storage.sync.get('clickvfxON', function(data) {
+
+  var clickvfx = data.clickvfxON;
+
+  //default value
+  if (clickvfx == undefined)
+  {
+    chrome.storage.sync.set({clickvfxON : true });
+    chrome.storage.sync.set({clickvfxOFF : false });
+    clickvfx = true;
+  }
+
+  console.log('clickvfx ', clickvfx);
+  if (clickvfx == true)
   {
 
     var a = new Audio('https://github.com/carekovisk/TenhouUI-plus/raw/main/sounds/click.mp3');

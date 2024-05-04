@@ -6,16 +6,19 @@
     <link rel="stylesheet" type="text/css" href="options.css">
 </head>
 <body>
-    <form name='optionform' id='optionform'>
-        <fieldset id="click vfx">
-            <legend>
-                <span>Takes effect next time a tenhou page is reloaded</span>
-            </legend>
-            <label>
-                <input type="checkbox" name="clickvfx" id="clickvfx" checked="checked"><strong>Click VFX</strong>
-            </label>
-        </fieldset>
-    </form>
+    <fieldset id="Click Effect">
+        
+        <legend>Click Effect</legend>
+        <div>
+            <input type="radio" name="clickvfx" id="clickvfxON" value="clickvfxON" checked>
+            <label for="clickvfxON">On</label>
+        </div>
+        <div>
+            <input type="radio" name="clickvfx" id="clickvfxOFF" value="clickvfxOFF" >
+            <label for="clickvfxOFF">Off</label>
+        </div>
+        
+    </fieldset>
     <script src="options.js"></script>
 </body>
 </html>

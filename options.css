@@ -2,11 +2,6 @@ body {
     min-width: 400px;
 }
 
-label {
-    display: block;
-    padding-bottom: 0.3em;
-}
-
 .hidden {
     display: none !important;
 }
