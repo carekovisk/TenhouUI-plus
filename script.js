@@ -1,21 +1,9 @@
+//click effect trigger
 chrome.storage.sync.get('clickvfxON', function(data) {
-
-  var clickvfx = data.clickvfxON;
-
-  //default value
-  if (clickvfx == undefined)
-  {
-    chrome.storage.sync.set({clickvfxON : true });
-    chrome.storage.sync.set({clickvfxOFF : false });
-    clickvfx = true;
-  }
-
-  console.log('clickvfx ', clickvfx);
-  if (clickvfx == true)
+  if (data.clickvfxON == true)
   {
 
-    var a = new Audio('https://github.com/carekovisk/TenhouUI-plus/raw/main/sounds/click.mp3');
-    
+    var a = new Audio('https://github.com/carekovisk/TenhouUI-plus/raw/main/sounds/click.mp3');    
     document.addEventListener("click", function(event) {
 
       a.play()    
@@ -33,7 +21,6 @@ chrome.storage.sync.get('clickvfxON', function(data) {
         dot.parentNode.removeChild(dot);
       }, 250);
     
-    
     });
 
   };
@@ -44,26 +31,13 @@ document.addEventListener('readystatechange', event => {
 
     switch (document.readyState) {
       case "loading":
-        console.log("document.readyState: ", document.readyState,
-         `- The document is still loading.`
-         );
         break;
       case "interactive":
-        console.log("document.readyState: ", document.readyState, 
-          `- The document has finished loading DOM. `,
-          `- "DOMContentLoaded" event`
-          );
-          
         break;
-      case "complete":
+      case "complete":        
         
-        console.log("document.readyState: ", document.readyState, 
-          `- The page DOM with Sub-resources are now fully loaded. `,
-          `- "load" event`
-          );
-
-          InitVars();
-
+        InitVars();
+        
         break;
     }
 
@@ -77,6 +51,8 @@ async function InitVars()
 
     var btndiv_element;
     var auxdiv_element;
+
+    var centralvfx_element;
  
     while (true) {
 
@@ -87,8 +63,6 @@ async function InitVars()
         maindiv_bg = window.getComputedStyle(maindiv_element).getPropertyValue('background-image');
         if ((maindiv_bg != undefined) && (maindiv_bg != "none")) 
         {
-
-            console.log("LOADED");
             
             document.body.classList.add("new-background");
             maindiv_element.classList.add("old-background");
@@ -102,6 +76,17 @@ async function InitVars()
             auxdiv_element.classList.add("auxdiv");
             //--
 
+            chrome.storage.sync.get('centervfxON', function(data) {
+              console.log('data.centervfxON: ', data.centervfxON);         
+              if (data.centervfxON == true)
+                {
+                  centralvfx_element = document.querySelector(".maindiv > canvas:nth-child(7)");  
+                  centralvfx_element.classList.add("centralvfx");
+                }
+            });
+
+            console.log("LOADED");
+            
             break;
         
         }

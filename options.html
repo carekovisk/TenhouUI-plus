@@ -6,9 +6,11 @@
     <link rel="stylesheet" type="text/css" href="options.css">
 </head>
 <body>
+
+    <label>- Takes effect next time a tenhou page is reloaded</label>
+    <br><br>
     <fieldset id="Click Effect">
-        
-        <legend>Click Effect</legend>
+        <legend>Click effect</legend>
         <div>
             <input type="radio" name="clickvfx" id="clickvfxON" value="clickvfxON" checked>
             <label for="clickvfxON">On</label>
@@ -17,7 +19,18 @@
             <input type="radio" name="clickvfx" id="clickvfxOFF" value="clickvfxOFF" >
             <label for="clickvfxOFF">Off</label>
         </div>
-        
+    </fieldset>
+    <br>
+    <fieldset id="Board center effect">
+        <legend>Center Board Effect</legend>
+        <div>
+            <input type="radio" name="centervfx" id="centervfxON" value="centervfxON" checked>
+            <label for="centervfxON">On</label>
+        </div>
+        <div>
+            <input type="radio" name="centervfx" id="centervfxOFF" value="centervfxOFF" >
+            <label for="centervfxOFF">Off</label>
+        </div>
     </fieldset>
     <script src="options.js"></script>
 </body>

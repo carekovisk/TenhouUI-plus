@@ -94,7 +94,7 @@ body
 body::after
 {
     font-size: 12px;
-    color: #ffffff2b;
+    color: #ffffff0e;
     font-style: normal;
     font-family: system-ui;
     font-weight: bold;
@@ -112,6 +112,11 @@ body::after
     --new-bg: "none";
     --old-bg: "none";
  }
+
+.centralvfx
+{
+    animation: glow3 0.75s ease-in-out infinite !important;
+}
 
 .old-background {
     background: radial-gradient(transparent, black), var(--old-bg) !important; 
@@ -765,8 +770,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
     border-style:  inset!important;;
     border-color: rgba(26, 255, 0, .31) !important;;
     border-width: 0px !important;
-    animation: glow3 0.75s ease-in-out infinite !important;
-
+    
     background-color: #0000 !important;
 
 }
