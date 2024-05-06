@@ -565,7 +565,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 /*Riichi*/
 .btndiv > div:nth-child(11)
 {
-    background-color: #e06b00 !important;
+    background-color: #e08600 !important;
 }
 
 /*Chii / Pon*/
@@ -726,27 +726,21 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 .btndiv > div:nth-child(30),
 .btndiv > div:nth-child(29),
 .btndiv > div:nth-child(5)
-{
-    position: fixed !important;
-    top:0 !important;
-    
-    font-size: 48px !important;
-    scale:.5;
-    font-style: normal !important;
-    background-color: #000000 !important;
-    border-radius: 15px !important;
-    opacity: .95;
-}
-.btndiv > div:nth-child(5) > div
-{
-    background-color: #0a4700 !important;
+{    
+    background: none !important;
+    background-color: #000 !important;
+    font-size: 50px !important;
+    scale:.75;
+    font-style: normal!important;
+    opacity: .5;
 }
 
-
-.btndiv > div:nth-child(30){top: 0vh!important;}
-.btndiv > div:nth-child(29){top: 7vh !important;}
-.btndiv > div:nth-child(5){top: 14vh !important;}
-
+.btndiv > div:nth-child(30):hover,
+.btndiv > div:nth-child(29):hover,
+.btndiv > div:nth-child(5):hover
+{    
+    opacity: .75;
+}
 
 /*mat*/
 .maindiv > canvas:nth-child(1)
