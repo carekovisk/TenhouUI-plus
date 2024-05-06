@@ -1,6 +1,14 @@
 # Tenhou/3/ UI +
 Extension Repository.
 
+Chrome:
+https://chromewebstore.google.com/detail/tenhou-ui+-for-3/ncgfckbjngkpmioedkhjneanhmkelfhb
+
+Firefox:
+https://addons.mozilla.org/en-US/firefox/addon/tenhou-ui-for-3/
+
+<br>
+
 Using custom JS and CSS styles to improve the overall experience of playing on tenhou.net/3/ and ron2.jp/3/
 - widescreen support
 - objects resized
