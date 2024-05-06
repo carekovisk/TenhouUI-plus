@@ -176,6 +176,13 @@ button,.btndiv.nosel > div > div
     border-style: outset;
 }
 
+/*combo boxes*/
+.select-wrapper > button
+{
+    white-space: nowrap !important;
+    width: fit-content !important;
+}
+
 /*start and end screen, + total window*/
 .maindiv > div.tbc.c24.c15 > div,
 .maindiv > div.tbc.c24.c15 > div > table,
