@@ -6,8 +6,12 @@
     <link rel="stylesheet" type="text/css" href="options.css">
 </head>
 <body>
-
-    <label>- Takes effect next time a tenhou page is reloaded</label>
+    <div>
+        <img style="vertical-align:middle"  src="https://raw.githubusercontent.com/carekovisk/TenhouUI-plus/main/images/icons/19.png">
+        <label><b>Tenhou UI+ /3/ Options</b></label>
+    </div>
+    <br>
+    <label>Takes effect next time a tenhou page is reloaded</label>
     <br><br>
     <fieldset id="Click Effect">
         <legend>Click effect</legend>
@@ -32,6 +36,20 @@
             <label for="centervfxOFF">Off</label>
         </div>
     </fieldset>
+    <br>
+    <fieldset id="Background radial effect">
+        <legend>Background Radial Effect</legend>
+        <div>
+            <!-- <input type="radio" name="radialvfx" id="radialvfxON" value="radialvfxON" checked>
+            <label for="radialvfxON">On</label>
+        </div>
+        <div>
+            <input type="radio" name="radialvfx" id="radialvfxOFF" value="radialvfxOFF" >
+            <label for="radialvfxOFF">Off</label> -->
+            <input type="range" min="1" max="5" value="5" class="slider" id="radialvfx">
+        </div>
+    </fieldset>    
+    <br>
     <script src="options.js"></script>
 </body>
 </html>

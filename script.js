@@ -63,12 +63,21 @@ async function InitVars()
         maindiv_bg = window.getComputedStyle(maindiv_element).getPropertyValue('background-image');
         if ((maindiv_bg != undefined) && (maindiv_bg != "none")) 
         {
-            
+
             document.body.classList.add("new-background");
             maindiv_element.classList.add("old-background");
 
             document.documentElement.style.setProperty("--new-bg", maindiv_bg);            
             document.documentElement.style.setProperty("--old-bg", "none");
+
+            chrome.storage.sync.get('radialvfx', function(data) {
+              var radial_value = data.radialvfx;
+              if (radial_value == 1) document.documentElement.style.setProperty("--radial-bg", "#00000000"); 
+              if (radial_value == 2) document.documentElement.style.setProperty("--radial-bg", "#0000004d"); 
+              if (radial_value == 3) document.documentElement.style.setProperty("--radial-bg", "#00000080"); 
+              if (radial_value == 4) document.documentElement.style.setProperty("--radial-bg", "#000000b8"); 
+              if (radial_value == 5)  document.documentElement.style.setProperty("--radial-bg", "#000000"); 
+            });
 
             //--
             maindiv_element.classList.add("maindiv");
@@ -77,7 +86,6 @@ async function InitVars()
             //--
 
             chrome.storage.sync.get('centervfxON', function(data) {
-              console.log('data.centervfxON: ', data.centervfxON);         
               if (data.centervfxON == true)
                 {
                   centralvfx_element = document.querySelector(".maindiv > canvas:nth-child(7)");  

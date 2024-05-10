@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.storage.sync.get('centervfxOFF', function(data) {
         document.getElementById('centervfxOFF').checked = data.centervfxOFF;
     });
+    chrome.storage.sync.get('radialvfx', function(data) {
+        document.getElementById('radialvfx').value = data.radialvfx;
+    });
 });
 
 document.getElementById('clickvfxON').addEventListener('change', function(event) {
@@ -25,9 +28,12 @@ document.getElementById('clickvfxOFF').addEventListener('change', function(event
 document.getElementById('centervfxON').addEventListener('change', function(event) {
     chrome.storage.sync.set({centervfxON : event.target.checked });
     chrome.storage.sync.set({centervfxOFF : !event.target.checked });
-
 });
 document.getElementById('centervfxOFF').addEventListener('change', function(event) {
     chrome.storage.sync.set({centervfxON : !event.target.checked });
     chrome.storage.sync.set({centervfxOFF : event.target.checked });
+});
+
+document.getElementById('radialvfx').addEventListener('input', function(event) {
+    chrome.storage.sync.set({radialvfx : this.value });
 });

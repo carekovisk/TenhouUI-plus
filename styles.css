@@ -111,6 +111,7 @@ body::after
 .vars{
     --new-bg: "none";
     --old-bg: "none";
+    --radial-bg: #000000;
  }
 
 .centralvfx
@@ -125,12 +126,11 @@ body::after
 
 .new-background {
 
-    background: radial-gradient(rgba(255, 0, 0, 0), #000000b0), var(--new-bg) !important; 
+    background: radial-gradient(rgba(255, 0, 0, 0), var(--radial-bg)), var(--new-bg) !important; 
     background-repeat: no-repeat !important;
     background-size: cover !important;    
     background-position: center !important;
 }
-
 
 body
 {
@@ -200,7 +200,7 @@ button,.btndiv.nosel > div > div
 .maindiv > div.tbc.c23.c15 > div > div,
 .maindiv > div.tbc.c25.c15 > div > div
 {
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-size: 250% !important; 
     align-content: center;
     
@@ -237,7 +237,7 @@ button,.btndiv.nosel > div > div
     border-width: 0px !important;
     background: none !important;
     font-size: 150% !important; 
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-weight: lighter !important;
     font-style: normal !important;
 
@@ -261,7 +261,7 @@ button,.btndiv.nosel > div > div
 /*Score Title*/
 .maindiv > div.tbc.c24.c15 > div > div
 {
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-size: 250% !important; 
     align-content: center;
     
@@ -331,7 +331,7 @@ button,.btndiv.nosel > div > div
     top: 3vh !important;
     background-color: #000000a6 !important;
     font-size: 320% !important;
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     text-align: center;
 }
 .maindiv > div.tbc.c20.c15
@@ -530,7 +530,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 .tbc.bblink.ts0[id^="m3670533"]:after,
 .tbc.bblink.ts0[id^="m3671045"]:after
 {
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-size: 50px !important;
     content: "Call" !important;
     margin-left: 10px;
@@ -550,7 +550,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 .btndiv > div:nth-child(9),
 .btndiv > div:nth-child(16)
 {
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-weight: bolder !important;
 
     position: absolute !important;
@@ -578,7 +578,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 /*Chii / Pon*/
 .btndiv > div:nth-child(2)
 {
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     background-color: #00307e !important;    
 
 }
@@ -705,7 +705,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
     background-color: #00000063 !important;
     
     
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-size: 600% !important;
     font-weight: normal!important;
     font-style: italic!important;
@@ -780,7 +780,7 @@ button:hover{ background-color: #3d3f44e3 !important;} /*standard button*/
 .nosel.tbl.ts0
 {
     font-weight: normal !important;
-    font-family: "Impact" !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     font-style: normal !important;
     font-size: 120% !important;
     text-shadow: -2px 2px 2px #000000ab,

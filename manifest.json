@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tenhou UI+ for /3/",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "permissions": [
     "activeTab",
     "storage"
